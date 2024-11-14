@@ -20,3 +20,4 @@ files/thesis.alg
 files/thesis.acr
 files/thesis.acn
 .DS_Store
+.vscode/settings.json
