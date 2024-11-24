@@ -21,7 +21,6 @@
     \input{preface/4_abstract}
     \input{preface/5_table_of_contents}
     \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
-    \printglossary[type=main, title=Glossario, toctitle=Glossario]
     \blankpage % example of a blank page that also increases the page couter by 1
 
     \mainmatter
@@ -32,6 +31,7 @@
 
     \pagenumbering{roman}
     \backmatter
+    \printglossary[type=main, title=Glossario, toctitle=Glossario]
     \input{references/bibliography}
     \input{references/webliography}
 \end{document}
