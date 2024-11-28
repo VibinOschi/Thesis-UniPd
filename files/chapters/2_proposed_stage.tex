@@ -1,26 +1,96 @@
 \chapter{\textit{Stage} proposto}
 \label{chap:stage-proposto}
 
-\section{Gestione aziendale degli \textit{stage}}\noindent
-Descrizione di come sono visti e gestiti in generale gli \textit{stage} all'interno dell'azienda.
+\section{Gestione aziendale degli \textit{stage}}\label{sec:stage-management}\noindent
+% \texttt{Descrizione di come sono visti e gestiti in generale gli stage all'interno dell'azienda.}
+M31 mostra molto interesse verso la creazione di rapporti con le nuove generazioni, questo avviene in diversi modi: tramite la M31 \textit{Academy} e tramite la partecipazione ai progetti di ``Ingegneria del Software'' della laurea triennale di informatica, come azienda proponente.\\
+M31 \textit{Academy} è una sorta di settore aziendale dedicato alla realizzazione di progetti con studenti universitari o neo-laureati. Ora come ora, l'azienda sta svolgendo progetti solo con studenti universitari, che prendono il ruolo da stagisti, perciò passo a descrivere meglio come essi vengono gestiti.\\
+L'influsso di stagisti è pricipalmente dovuto alla partecipazione dell'azienda allo \textit{StageIT}, un evento promosso da Confindustria Veneto Est e l'Università di Padova, dove gli studenti vengono introdotti a tre progetti che possono svolgere in azienda. M31 però offre una lista più numerosa di progetti, che vengono esposti quando lo studente contatta direttamente l'azienda.
+Questi progetti, essendo numerosi, possono essere di vario tipo: alcuni pongono lo stagista in un progetto su cui l'azienda sta già lavorando, mentre altri progetti, come quello che ho scelto io, servono all'azienda per esplorare nuove tecnologie o per prepararsi per un progetto aziendale che non ha ancora avuto modo di iniziare.
 
-\section{Descrizione progetto}\noindent
-Esposizione del problema affrontato dal mio progetto di \textit{stage}.
+\section{Descrizione progetto}\label{sec:project-description}\noindent
+% \texttt{Esposizione del problema affrontato dal mio progetto di stage.}
+Il progetto che ho affrontato in azienda consisteva nella realizzazione di un software per l'analisi di dati tramite tecniche di \gls{machinelearning} e di \gls{deeplearning}; in particolare, per l'analisi di segnali elettrocardiografici.\\
+Questo progetto di \textit{stage} serviva all'azienda per prepararsi ad un progetto che si aspettano di affrontare in futuro, collaborando insieme ad un'azienda con cui sono attualmente in comunicazione.\\
+Questo progetto vede come \textit{focus} principale la gestione di grandi quantità di dati. Questi dati, facenti parte di un \gls{dataset}, devono essere gestiti correttamente e nel modo più efficiente possibile all'interno di un software capace di effettuare addestramenti di reti neurali artificiali.\\
+In secondo luogo, il progetto vede anche l'effettivo addestramento e valutazione di vari tipi di reti neurali artificiali, sia con lo scopo di testare, che di esplorare quali sono le tecniche migliori per l'analisi di elettrocardiogrammi.
+\begin{figure}[H]
+    \centering
+    \includegraphics[alt={Rappresentazione dei punti principali del progetto}, width=0.9\columnwidth]{img/desc_proj.png}
+    \caption{\centering Rappresentazione dei punti principali del progetto}
+    \label{fig:desc-proj}
+\end{figure}
 
-\section{Obiettivi}\noindent
-Lista degli obiettivi da completare che riguardano il prodotto del mio operato durante lo \textit{stage}, quindi quello che l'azienda vuole ottenere.
+\section{Obiettivi}\label{sec:objectives}\noindent
+%\texttt{Lista degli obiettivi da completare che riguardano il prodotto del mio operato durante lo stage, quindi quello che l'azienda vuole ottenere.}\\
+Gli obiettivi aziendali che sono stati fissati possiedono ognuno una certa importanza; questa può rientrare in una dei tre seguenti tipi:
+\begin{itemize}
+    \item \textbf{Obbligatorio:} indica un requisito vincolante, in quanto obiettivo primario richiesto dal committente
+    \item \textbf{Desiderabile:} indica un requisito non vincolante o strettamente necessario, ma dal riconoscibile valore aggiunto
+    \item \textbf{Facoltativo:} indica un requisito facoltativo, rappresentano valore aggiunto non strettamente competitivo
+\end{itemize}
+Di seguito vengono esposti i vari obiettivi aziendali che sono stati imposti per il completamento del progetto:
+\begin{center}
+    \rowcolors{1}{}{tableGray}
+    \begin{longtable}{|p{10.5cm}|p{2.5cm}|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Obiettivo}} & \multicolumn{1}{c|}{\textbf{Importanza}}\\ 
+    \hline 
+    \endfirsthead
+    \rowcolor{white}
+    \multicolumn{2}{c}{{\bfseries \tablename\ \thetable{} -- Continuo della tabella}}\\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{A}} & \multicolumn{1}{c|}{B}\\ \hline 
+    \endhead
+    \hline
+    \rowcolor{white}
+    \multicolumn{2}{|r|}{{Continua nella prossima pagina...}}\\
+    \hline
+    \endfoot
+    \endlastfoot 
+    
+    Studio delle tecnologie e del contesto specifico & \multicolumn{1}{c|}{Obbligatorio} \\
+    \hline
+    Creazione di un dataset appropriato e di tecniche per la sua gestione & \multicolumn{1}{c|}{Obbligatorio} \\
+    \hline
+    Implementazione in \textit{Python} degli algoritmi basati su tecniche di \textit{deep learning} & \multicolumn{1}{c|}{Obbligatorio} \\
+    \hline
+    Valutazione dell'esecuzione  degli algoritmi & \multicolumn{1}{c|}{Obbligatorio} \\
+    \hline
+    Realizzazione di \textit{unit test} & \multicolumn{1}{c|}{Desiderabile} \\
+    \hline
+    Idee o suggerimenti su come migliorare in futuro la performance del software & \multicolumn{1}{c|}{Facoltativo} \\
+    \hline
+    \hiderowcolors
+    \caption{Lista dei vari obiettivi aziendali.}
+    \label{tab:obiettivi}
+    \end{longtable}
+\end{center}
 
-\section{Vincoli}
+\section{Vincoli}\label{sec:restrictions}
 
 \subsection{Vincoli tecnologici}\noindent
-Vengono indicati i vari vincoli sulle tecnologie utilizzate.
+% \texttt{Vengono indicati i vari vincoli sulle tecnologie utilizzate.}
+Per i vincoli tecnologici, alcune delle tecnologie mi sono state imposte per la realizzazione di questo progetto.
+Queste tecnologie sono relative all'addestramento dei modelli di intelligenza artificiale, dove ho usato Keras.
+Utilizzando questa tecnologia, però, si è inoltre obbligati a fare uso di \textit{Python} e, per aumentare la semplicità di installazione dei pacchetti di questo linguaggio di programmazione, si è imposto anche l'uso di \textit{Conda}, un \textit{software} per la gestione di pacchetti e \gls{environment}, che ha permesso l'installazione di ciò che era necessario senza troppi intoppi.
 
-\subsection{Vincoli temporali}\noindent
-Viene menzionato il limite di tempo dello \textit{stage}.
+\subsection{Vincoli temporali}\label{subsec:time-restrictions}\noindent
+% \texttt{Viene menzionato il limite di tempo dello stage.}
+Per la sua natura, il tirocinio curriculare ha un limite di tempo: ovvero deve essere dalle 300 alle 320 ore di lavoro, e non è possibile sforare 40 ore settimanalmente.
+Per lavorare al progetto, lo \textit{stage} è stato distribuito in giornate lavorative da 8 ore ciascuno, per un totale di all'incirca 38 giorni.
 
 \subsection{Vincoli organizzativi}\noindent
-Descrizione dei vincoli per il corretto mantenimento dell'andamento dello \textit{stage}.
+% \texttt{Descrizione dei vincoli per il corretto mantenimento dell'andamento dello stage.}
+Per il corretto svolgimento del tirocinio curriculare, sono stati presi alcuni accorgimenti.\\
+In primis, svolgevo periodicamente dei \textit{meeting} con il mio \textit{tutor} aziendale, nei quali esponevo le attività svolte da me durante l'ultimo periodo, in modo da far sì che l'avanzamento del progetto si allineasse con gli obiettivi imposti in modo corretto.\\
+In secundis, ogni cinque giorni lavorativi dovevo mandare una \textit{email} al mio relatore di tesi, indicando quali attività erano previste da svolgere durante la settimana lavorativa passata, e come esse sono state svolte rispetto alle aspettative.
 
-\section{Motivazione della scelta}\noindent
-Esposizione della motivazione per cui ho scelto questo specifico progetto di \textit{stage} e non qualche altra opzione.\\
-Vengono inoltre esposti gli obiettivi imposti personalmente che riguardano la mia crescita professionale.
+\section{Motivazione della scelta}\label{sec:choice-motivation}\noindent
+% \texttt{Esposizione della motivazione per cui ho scelto questo specifico progetto di stage e non qualche altra opzione.}\\
+% \texttt{Vengono inoltre esposti gli obiettivi imposti personalmente che riguardano la mia crescita professionale.}
+Sono venuto a conoscenza di M31 attraverso l'evento \textit{StageIT}, un'evento che mi ha dato la possibilità di incontrare, in un singolo posto, diverse aziende e le loro proposte di \textit{stage}.
+Tra queste aziende, M31 era una delle aziende che mi ha interessato di più, questo perchè avevo un maggiore interesse a svolgere un progetto che utilizzava, in qualche maniera, l'intelligenza artificiale.
+Il motivo per questo interesse era per via di un mio obiettivo per approfondire questo argomento, anche in vista della laurea magistrale che sono intenzionato nel svolgere.\\
+M31 durante l'evento \textit{StageIT} aveva proposto un tema di \textit{machine learning} in ambito di \gls{computervision}, che ero intenzionato nel svolgere quando stavo contattando l'azienda, ma vedendo la lista aggiornata dei progetti di \textit{stage} offerti, ho deciso di scegliere un secondo progetto, sempre di intelligenza artificiale, ma in ambito biomedico, questo perchè le tecniche utilizzate per questo specifico ambito mi sarebbero state nuove.\\
+Oltre all'obiettivo di espandere le mie conoscenze nell'argomento trattato nel progetto, avevo altri obiettivi personali, come ad esempio: capire come opera effettivamente un'azienda di questo settore, essendo la mia prima esperienza lavorativa in questo ambito, oppure di migliorare l'abilità di \textit{problem solving}.
