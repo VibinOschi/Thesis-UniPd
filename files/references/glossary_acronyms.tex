@@ -1,13 +1,13 @@
 % Acronyms
-\newacronym{api}{API}{Application Program Interface}
+% \newacronym{api}{API}{Application Program Interface}
 
 % Glossary
-\newglossaryentry{apig}{
-    name={API},
-    text={Application Program Interface},
-    sort=api,
-    description={In informatics, an API is a set of procedures available to programmers, typically grouped to form a toolkit for a specific task within a program. Its purpose is to provide an abstraction, usually between hardware and the programmer or between low-level and high-level software, simplifying the programming process}
-}
+%\newglossaryentry{apig}{
+%    name={API},
+%    text={Application Program Interface},
+%    sort=api,
+%    description={In informatics, an API is a set of procedures available to programmers, typically grouped to form a toolkit for a specific task within a program. Its purpose is to provide an abstraction, usually between hardware and the programmer or between low-level and high-level software, simplifying the programming process}
+%}
 
 \newglossaryentry{machinelearning}{
     name={Machine Learning},
@@ -67,4 +67,64 @@
     name=RAM,
     text=RAM,
     description={La \textit{Random Access Memory} è un componente presente nei \textit{computer} che permette di immagazzinare dati che vengono letti e scritti, all'interno di essa, in modo rapido. Questa componente è necessaria per far funzionare programmi e per processare dati}
+}
+
+\newglossaryentry{api}{
+    name=API,
+    text=API,
+    description={Un \textit{Application Programming Interface} è un \textit{set} di regole e protocolli che permettono a diverse applicazioni software di communicare tra di loro}
+}
+
+\newglossaryentry{preprocessing}{
+    name=Preprocessing,
+    text=preprocessing,
+    description={Il \textit{preprocessing} è uno step che spesso viene effettuato quando si effettua analisi di dati o applicazione di \textit{machine learning}. In questo step si ha la trasformazione dei dati grezzi in una forma processata che è più adatta}
+}
+
+\newglossaryentry{downsampling}{
+    name=Downsampling,
+    text=downsampling,
+    description={Il \textit{downsampling} è una tecnica di processamento dei dati che va a ridurre il numero di dati in un ``set'', ciò rende più semplice la gestione. Questo processo viene effettuato seguendo specifici metodi, che possono andare a causare la perdita di dati importanti se il livello di \textit{downsampling} è troppo severo}
+}
+
+\newglossaryentry{confusionmatrix}{
+    name=Matrice di Confusione,
+    text=matrice di confusione,
+    description={La matrice di confusione è uno ``strumento'' utilizzato per valutare modelli di classificazione. Generalmente si tratta di una tabella quadrata dove vengono rappresentati i risultati delle predizioni del modello in confronto al vero valore}
+}
+
+\newglossaryentry{confidence}{
+    name=Confidenza,
+    text=confidenza,
+    description={Un grafico della confidenza è una rappresentazione visuale che utilizza gli intervalli di confidenza per mostrare l'incertezza associata a stime statistiche. In questo ambito viene usato per capire quanto un modello di classificazione è sicuro delle predizioni che fa}
+}
+
+\newglossaryentry{epoch}{
+    name=Epoca,
+    text=epoca,
+    description={Un'epoca, nel contesto del \textit{machine learning}, è una singola iterazione della fase di addestramento dove viene percorso l'intero \textit{training dataset}}
+}
+
+\newglossaryentry{prefetch}{
+    name=Prefetch,
+    text=prefetch,
+    description={Il \textit{prefetch} è una tecnica utilizzata per caricare anticipatamente dei dati che verranno utilizzati a breve}
+}
+
+\newglossaryentry{label}{
+    name=Label,
+    text=label,
+    description={Una \textit{label}, anche detta etichetta, è un'annotazione che assegna una categoria ad uno specifico dato. Vengono utilizzate confrontare il risultato ottenuto da un modello con l'effettiva categoria}
+}
+
+\newglossaryentry{dicom}{
+    name=DICOM,
+    text=DICOM,
+    description={DICOM (\textit{Digital Imaging and Communications in Medicine}) è uno standard usato in campo medico per l'immagazzinamento, transmissione e gestione delle immagini medicali}
+}
+
+\newglossaryentry{batch}{
+    name=Batch,
+    text=batch,
+    description={Con il termine \textit{batch}, si definisce una porzione di \textit{dataset} che viene utilizzata per essere processata in un'insieme di dati in una singola iterazione di addestramento. È un punto chiave di un processo di ottimizzazione per fare in modo di processare in un modo più efficiente il \textit{dataset}}
 }
