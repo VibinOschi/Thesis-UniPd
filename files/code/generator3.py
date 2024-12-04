@@ -1,0 +1,1 @@
+training_dataset = training_dataset.prefetch(buffer_size=2)

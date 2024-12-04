@@ -1,0 +1,1 @@
+training_dataset = training_dataset.batch(batch_size)
